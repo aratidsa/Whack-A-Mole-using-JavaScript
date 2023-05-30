@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whac a Mole Game</title>
+     <!------------------------ Font Style -------------------------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Roboto+Mono:ital,wght@1,300&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-------- Heading of the game -------------->
+    <div class="heading">
+        <h1>Whack - a - Mole</h1>
+    </div>
+   
+       <!-------- Score & Timer  Grid -------------->
+    <div class="container">
+        <button id="start-button" onclick="startGame()">Start Game</button>
+        <h1>Score : <span id="score">0</span> </h1>
+        <h1>Timer : <span id="time">20</span> </h1>       
+    </div>
+    
+    <!-------- Board of the game -------------->
+    <div class="game">
+        <div class="wall">
+            <div class="mole"></div>
+        </div>
+        <div class="wall">
+            <div class="plant"></div>
+        </div>
+        <div class="wall">
+            <div class="mole"></div>
+        </div>
+        <div class="wall">
+            <div class="plant"></div>
+        </div>   
+        <div class="wall">
+            <div class="mole"></div>
+        </div>
+        <div class="wall">
+            <div class="plant"></div>
+        </div> 
+        <div class="wall">
+            <div class="mole"></div>
+        </div>
+        <div class="wall">
+            <div class="plant"></div>
+        </div>
+        <div class="wall">
+            <div class="mole"></div>
+        </div>                                         
+    </div>
+
+      <!------------------------ Modal -------------------------------- -->
+    <div class="modal-container">
+       <div class="modal"></div>
+       <h2 style="color:red;">Game Over</h2>
+       <h2>You have whacked the mole <span id="whackMole"> 0 </span> times and whacked the plant <span id="whackPlant"> 0 </span> times.</h2>
+       <h2>Your score : <span id="modal-score"> 0  </span></h2>
+       <h2>Want to play again ? <a onclick="startGame()">Yes</a> / <a onclick="exitGame()">No</a></h2>
+    </div>
+
+      <!------------------------ Footer ---------------------------------->
+    <footer class="rule">
+       <h1>**** Rules : Score a point when you whack a mole & lose a point when you whack a plant</h1>
+    </footer>
+    
+   <!------------------------ JavaScript -------------------------------- -->
+    <script src="app.js"></script>
+</body>
+</html>

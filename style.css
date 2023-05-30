@@ -1,0 +1,157 @@
+body
+{
+    font-family:Satisfy,cursive;
+    text-align: center;
+    margin:0;
+    padding:0;    
+    background:rgba(86, 241, 75, 0.292);
+    color:rgb(109, 19, 19);
+}
+
+/* ---------------------- Heading ---------------------- */
+.heading
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ---------------------- Score & Timer  Grid ---------------------- */
+.container
+{
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color:rgba(3, 21, 1, 0.705);
+}
+
+/* ---------------------- Start Button---------------------- */
+#start-button
+{
+    font-family:Satisfy,cursive;
+    width:150px;
+    height:40px;
+    font-size: 20px;
+    background-color: rgba(3, 21, 1, 0.705);
+    color:beige;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid   rgba(3, 21, 1, 0.705);
+    cursor: pointer;
+    margin-top:20px;
+    margin-left:150px;
+}
+
+#start-button:hover
+{
+    box-shadow: 3px 3px 3px 3px rgb(71, 70, 70);
+}
+
+/* ---------------------- Board of the Game---------------------- */
+.game
+{
+   width:600px;
+   height:450px;
+   margin: 0 auto;
+   display:flex;
+   flex-wrap: wrap;   
+}
+
+/* ---------------------- wall of the Game---------------------- */
+.wall
+{   
+    flex:1 0 30%; 
+    position:relative;
+    overflow: hidden;
+}
+
+.wall:after
+{   display:block;
+    background: url('wall.jpeg') bottom center no-repeat;
+    background-size: contain ;
+    width:200px;
+    height:90px;
+    z-index: 2;
+    content:'';
+    bottom:-30px;
+    position: absolute;
+}
+
+/* ---------------------- mole of the Game---------------------- */
+.mole
+{
+    width:30%;
+    height:60%;
+    top:50%;
+    background: url('monty-mole.jpeg') bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    transition: all 0.4s;
+    left:60px;
+}
+
+/* ---------------------- plant of the Game---------------------- */
+.plant
+{
+    width:30%;
+    height:60%;
+    top:50%;
+    background: url('piranha-plant.jpeg') bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    transition: all 0.4s;
+    left:60px;
+}
+
+/* ---------------------- position of the mole and plant---------------------- */
+
+.wall.up .mole
+{
+    top:0;
+}
+
+.wall.up .plant
+{
+    top:0;
+}
+
+/* ---------------------- modal---------------------- */
+.modal-container
+{
+    width:500px;
+    height:300px;
+    background-color: beige;
+    color:rgb(46, 9, 9);
+    top:300px;
+    position:absolute;
+    left:530px;
+    display: none;
+    border-radius: 10px;
+}
+
+/* ---------------------- anchor tags---------------------- */
+a
+{
+    color:blueviolet;
+    cursor: pointer;
+}
+
+a:hover
+{
+    color:magenta;
+    cursor: pointer;
+}
+
+#whackMole, #whackPlant, #modal-score
+{
+    color: rgb(194, 14, 74);
+    font-weight: bold;
+}
+
+/* ---------------------- footer---------------------- */
+.rule h1
+{   margin-top:50px;
+    color:black;
+    font-size:20px;
+}
