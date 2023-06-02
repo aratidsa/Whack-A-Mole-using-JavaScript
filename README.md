@@ -18,7 +18,7 @@ I have built Whack A Mole game in JavaScript,HTML and CSS
 5.	After completion of the game a modal appears giving a count of the number of times you have whacked the mole and plant and your total score.
 6.	The modal also asks if the player wants to continue playing or exit the game.
 
-Screen Shots of the Game
+**Screen Shots of the Game**
 
 ![pic1](https://github.com/aratidsa/Whack-A-Mole-using-JavaScript/assets/128802362/bbacc256-6394-4523-ab5f-bb43274f00ec)
 ![Screenshot 2023-05-30 131324](https://github.com/aratidsa/Whack-A-Mole-using-JavaScript/assets/128802362/2433ff7c-847d-4201-a126-db74358584e5)
